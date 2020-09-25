@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <div>
+          <h2>Virat Kohli</h2>
+          <p>
+            Kohli has been the recipient of many awards such as the Sir Garfield
+            Sobers Trophy (ICC Cricketer of the Year) in 2017 and 2018; ICC Test
+            Player of the Year 2018; ICC ODI Player of the Year in 2012, 2017
+            and 2018 and Wisden Leading Cricketer in the World in 2016, 2017 and
+            2018.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="imgbx">
+        <img src="./img/a3.png" />
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">ICC Rankings</a></li>
+        <li><a href="#">IPL Ranking</a></li>
+      </ul>
+      <ul class="social">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </section>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    <script type="text/javascript">
+      function menuToggle() {
+        var nav = document.getElementById("nav");
+        nav.classList.toggle("active");
+
+        var toggle = document.getElementById("toggle");
+        toggle.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
